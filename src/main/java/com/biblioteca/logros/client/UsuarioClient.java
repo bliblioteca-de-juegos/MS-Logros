@@ -13,7 +13,7 @@ public class UsuarioClient {
 
     public UsuarioDTO obtenerUsuario(Long usuarioId) {
         return usuarioWebClient.get()
-                .uri("/api/usuarios/{id}", usuarioId)
+                .uri("/api/v2/usuarios/{id}", usuarioId)
                 .retrieve()
                 .bodyToMono(UsuarioDTO.class)
                 .block();

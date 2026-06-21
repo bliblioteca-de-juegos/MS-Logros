@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "ms-juegos", url = "${ms.juegos.url}")
 public interface JuegoClient {
 
-    @GetMapping("/api/juegos/{id}")
+    @GetMapping("/api/v2/juegos/{id}")
     JuegoDTO obtenerJuego(@PathVariable Long id);
 }

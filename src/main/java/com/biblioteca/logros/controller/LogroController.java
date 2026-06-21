@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/logros")
+@RequestMapping("/api/v2/logros")
 @RequiredArgsConstructor
 public class LogroController {
 
